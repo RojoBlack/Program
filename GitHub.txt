@@ -1,2 +1,6 @@
 git init
 git clone
+
+git fetch origin main:tmp
+git rebase tmp
+git push origin main

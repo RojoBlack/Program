@@ -16,5 +16,5 @@ export class AppComponent {
     'Install Angular CLI',
     'Create Proyect',
     'Create Components'
-  ]
+  ];
 }
