@@ -1,0 +1,16 @@
+git init: inicializamos repositorio
+npm init -y: creamos nuestro package.json
+npm i -D typescript: instalamos TS como dependencia local de desarrollo
+npx tsc --version: vemos que version del ts compiler tenemos
+npx tsc --init: creamos nuestro tsconfig.json
+npm i ts-node -D: instalamos la librería ts-node en desarrollo para transpilar y hacer más fácil nuestra vida con TS
+code .: para abrir vs code en la terminal
+npx tsc: para traspilar a la carpeta designada en JS
+.gitignore: se saca de la página gitignore.io MAC, LINUX, WINDOWS, NODE
+.editorconfig: lo da el profe de la clase en platzi
+
+
+en el archivo tsconfig.json {
+    outdir: destina la carpeta donde se transpilará
+    target: tiene que estar en "es6"
+}

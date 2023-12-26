@@ -1,0 +1,8 @@
+npm i @angular/cli -g (instalar de manera global)
+
+ng new todoapp --skip-tests (crear un nuevo proyecto) {
+	elegimos CSS}
+
+cd todoapp (entrar a la carpeta)
+
+ng serve (ejecutar el proyecto)
