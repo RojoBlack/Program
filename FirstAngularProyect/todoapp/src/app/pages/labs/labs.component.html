@@ -46,6 +46,9 @@
   <div *ngIf="name() === 'René'">
     I'm René
   </div>
+  @if (name() === 'René') {
+    <div>I'm René</div>
+  }
   <input type="number" [value]="person().age" (change)="changeAge($event)">
   <div *ngIf="person().name === 'René' && person().age > 18">
     My name is René, and i'm older than 18

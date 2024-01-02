@@ -1,0 +1,76 @@
+[debug] [2024-01-02T19:31:23.253Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T19:31:23.255Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ashia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-02T19:31:23.255Z] CLI Version:   13.0.2
+[debug] [2024-01-02T19:31:23.255Z] Platform:      win32
+[debug] [2024-01-02T19:31:23.255Z] Node Version:  v20.10.0
+[debug] [2024-01-02T19:31:23.256Z] Time:          Tue Jan 02 2024 16:31:23 GMT-0300 (hora de verano de Chile)
+[debug] [2024-01-02T19:31:23.256Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T19:31:23.259Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T19:31:23.259Z] > authorizing via signed-in user (rojoblack1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Program1\FirstAngularProyect\todoapp
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-02T19:34:40.880Z] ----------------------------------------------------------------------
+[debug] [2024-01-02T19:34:40.882Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ashia\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-01-02T19:34:40.883Z] CLI Version:   13.0.2
+[debug] [2024-01-02T19:34:40.883Z] Platform:      win32
+[debug] [2024-01-02T19:34:40.883Z] Node Version:  v20.10.0
+[debug] [2024-01-02T19:34:40.883Z] Time:          Tue Jan 02 2024 16:34:40 GMT-0300 (hora de verano de Chile)
+[debug] [2024-01-02T19:34:40.883Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-02T19:34:40.887Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-02T19:34:40.887Z] > authorizing via signed-in user (rojoblack1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Program1\FirstAngularProyect\todoapp
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-01-02T19:36:39.054Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-01-02T19:36:39.054Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":" ","name":"y"}
+[debug] [2024-01-02T19:36:39.986Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-01-02T19:36:39.986Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id must be at least 6 characters long"},{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name must be at least 4 characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-01-02T19:36:40.065Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (C:\Users\ashia\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\ashia\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
