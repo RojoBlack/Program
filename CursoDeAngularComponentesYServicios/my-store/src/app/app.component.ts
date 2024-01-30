@@ -4,44 +4,26 @@ import { ImgComponent } from './components/img/img.component';
 import { FormsModule } from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { Product } from './models/product.model';
+import { CommonModule, NgForOf } from '@angular/common';
+import { ProductsComponent } from "./components/products/products.component";
+import { NavComponent } from "./components/nav/nav.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, ImgComponent, FormsModule, ProductComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [RouterOutlet, ImgComponent, FormsModule, ProductComponent, CommonModule, ProductsComponent, NgForOf, NavComponent]
 })
 export class AppComponent {
   imgParent = '';
-  products: Product[] = [
-    {
-      id: '1',
-      name: 'Product 1',
-      image: "https://picsum.photos/100",
-      price: 100
-    },
-    {
-      id: '2',
-      name: 'Product 2',
-      image: "https://picsum.photos/200",
-      price: 200
-    },
-    {
-      id: '3',
-      name: 'Product 3',
-      image: "https://picsum.photos/300",
-      price: 300
-    },
-    {
-      id: '4',
-      name: 'Product 4',
-      image: "https://picsum.photos/400",
-      price: 400
-    }
-  ]
+  showImg = true;
 
   onLoaded(img: string) {
     console.log('log padre', img);
+  }
+
+  toggleImg() {
+    this.showImg = !this.showImg;
   }
 }
