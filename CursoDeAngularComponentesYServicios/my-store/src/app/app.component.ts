@@ -7,13 +7,14 @@ import { Product } from './models/product.model';
 import { CommonModule, NgForOf } from '@angular/common';
 import { ProductsComponent } from "./components/products/products.component";
 import { NavComponent } from "./components/nav/nav.component";
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, ImgComponent, FormsModule, ProductComponent, CommonModule, ProductsComponent, NgForOf, NavComponent]
+    imports: [RouterOutlet, ImgComponent, FormsModule, ProductComponent, CommonModule, ProductsComponent, NgForOf, NavComponent, HttpClientModule]
 })
 export class AppComponent {
   imgParent = '';
